@@ -1,0 +1,114 @@
+.movie-detail {
+    min-height: 100vh;
+    background: #141414;
+    color: white;
+}
+
+.detail-container {
+    width: 100%;
+    height: 90vh;
+    position: relative;
+}
+
+.detail-banner {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.banner-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #141414, transparent 80%),
+                linear-gradient(to top, #141414, transparent 50%);
+    display: flex;
+    align-items: center;
+    padding: 0 4%;
+}
+
+.detail-info {
+    max-width: 600px;
+}
+
+.detail-info h1 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+}
+
+.tagline {
+    font-style: italic;
+    color: #a3a3a3;
+    margin-bottom: 15px;
+}
+
+.meta {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.overview {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.detail-btns {
+    display: flex;
+    gap: 15px;
+}
+
+.loading {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    background: #141414;
+    color: white;
+}
+
+.detail-btns .btn {
+    border: 0;
+    outline: 0;
+    padding: 8px 16px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    background: white;
+    color: black;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.detail-btns .btn img {
+    width: 20px;
+}
+
+.detail-btns .btn.dark-btn {
+    color: #fff;
+    background: #6d6d6eb3;
+}
+
+.detail-btns .btn:hover {
+    background: #ffffffbf;
+}
+
+.detail-btns .btn.dark-btn:hover {
+    background: #6d6d6e66;
+}
+
+.detail-btns .btn.watchlisted-btn {
+    color: #fff;
+    background: #e50914; /* Netflix red to highlight */
+}
+
+.detail-btns .btn.watchlisted-btn:hover {
+    background: #f40612;
+}
